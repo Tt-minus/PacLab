@@ -1,3 +1,5 @@
+#include "renderer.hpp"
+
 struct EntityManager {
 	std::vector<std::shared_ptr<Entity>> list;
 	void update(double dt);

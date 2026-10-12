@@ -1,4 +1,10 @@
 #include "scenes.cpp"
+#include "renderer.hpp"
+
+struct Scenes {
+	static std::shared_ptr<Scene> menu;
+	static std::shared_ptr<Scene> game;
+};
 
 class MenuScene : public Scene {
 private:
@@ -6,7 +12,7 @@ private:
 
 public:
 	MenuScene() = default;
-	void update(const float& dt) override;
+	void update(const float &dt) override;
 	void render() override;
 	void load()override;
 };
@@ -19,12 +25,7 @@ private:
 
 public:
 	GameScene() = default;
-	void update(const float& dt) override;
+	void update(const float &dt) override;
 	void render() override;
 	void load() override;
-};
-
-struct Scenes {
-	static std::shared_ptr<Scene> menu;
-	static std::shared_ptr<Scene> game;
 };

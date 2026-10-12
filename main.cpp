@@ -1,7 +1,7 @@
 #include "scenes.hpp"
 #include "scenes.cpp"
 #include "engine/game_system.hpp"
-#include "render.hpp"
+#include "renderer.hpp"
 
 int main() {
 	Renderer::queue(&text);
